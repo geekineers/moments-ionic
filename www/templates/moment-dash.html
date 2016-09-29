@@ -1,0 +1,24 @@
+<ion-view view-title="Moments">
+  <ion-nav-buttons side="right">
+  </ion-nav-buttons>
+  <ion-content class="padding" lazy-scroll>
+    <div class="card" ng-repeat="moment in moments">
+      <div class="item item-divider">Somewhere in {{moment.address}}</div>
+      <div class="item item-body">
+        <!-- <div>
+          {{moment.message}}</b>
+        </div>
+        <img ng-if="incident.files.length > 0" width= "100%" image-lazy-src="http://192.168.0.31:600/api/images/{{moment.image}}" image-lazy-loader="lines">  -->
+        <div class="item item item-image ">
+          <h3>{{moment.message}}</h3>
+
+          <!-- <img  width= "50%" image-lazy-src="http://192.168.0.42:32774/api/v1/images/{{moment.image}}" image-lazy-loader="lines"> -->
+         <!-- <img src="http://192.168.0.31:600/api/v1/images/{{moment.image}}"> -->
+
+        </div>
+
+      </div>
+    </div>
+  </ion-content>
+  <button class="button-icon round-overlay-button bottom-right button icon ion-plus-round dark small" ui-sref="moment.post"></button>
+</ion-view>

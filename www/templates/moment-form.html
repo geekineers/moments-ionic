@@ -1,0 +1,83 @@
+<ion-view view-title="Share your moment">
+
+ 	<!--<ion-nav-buttons side="left" ng-show="false">
+        <button class="button button-icon ion-chevron-left" ng-click="doBack()"></button>
+  	 </ion-nav-buttons>-->
+
+     <form enctype="multipart/form-data">
+      <div class="list">
+        <div class="item">
+          <span class="input-label">Category
+            &nbsp;<i class="ion-chevron-right"></i>&nbsp;
+          Sub-category</span>
+        </div>
+
+        <!-- <ui-view name="incident-map"></ui-view> -->
+
+        <!-- <label>LAT: {{geoloc}}</label> -->
+          <!-- <div class="ui-view" name="incident-map"></div> -->
+
+        <div class="item item-input item-stacked-label">
+          <span class="input-label" >Description</span>
+          <textarea style="margin-top: 0px; margin-bottom: 0px; height: 95px;" ng-model="incident.description"></textarea>
+        </div>
+
+        <div>
+            <!-- <center>
+              <img ng-model="noimage" ng-init="noimage=true" ng-src="{{image}}" style="width:100%;">
+              <div ng-if="noimage" class="dark">Take a photo</div>
+            </center> -->
+        </div>
+
+        <div class="item item-button-right">
+          <!-- <a ng-click="getPhoto()"><i class="button button-icon icon ion-android-camera text-24"></i></a> -->
+          &nbsp;&nbsp;
+
+          <!-- <a href="" ng-click="selImages()"><i class="button button-icon icon ion-ios-navigate text-24"></i> </a> -->
+
+
+
+          <button class="button button-icon icon ion-android-send" type="submit" ng-click="doSubmitAttachment()" >
+
+            <!--<span class="text-16">Submit</span>-->
+
+          </button>
+        </div>
+
+      </div>
+    </form>
+
+
+
+
+
+      <!-- <form ng-submit="doSubmitAttachment()">
+    	<ion-content>
+
+
+        <div class="list">
+          <label class="item item-input">
+            <textarea class="text-16" placeholder="Write about it..."
+            ng-model="msg"></textarea>
+          </label>
+        </div>
+        <div>
+          <center>
+            <img ng-model="noimage" ng-init="noimage=true" ng-src="{{image}}" style="width:100%;">
+            <div ng-if="noimage" class="dark">Take a photo</div>
+          </center>
+        </div>
+      </ion-content>
+      <div class="bar bar-footer bar-light">
+
+        <div class="button-bar">
+        <button class="button button-icon icon ion-ios-navigate" ng-click=""></button>
+        <button class="button button-icon icon ion-android-camera" ng-click="getPhoto()"></button>
+
+        <button class="button button-icon icon ion-android-send" type="submit"  >
+        </button>
+      </div>
+      </div>
+    </form> -->
+
+</ion-view>
